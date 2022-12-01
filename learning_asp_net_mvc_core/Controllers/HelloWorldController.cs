@@ -10,9 +10,9 @@ namespace learning_asp_net_mvc_core.Controllers
             return "This is my default action...";
         }
         
-        public string Welcome(string name, int numTimes = 1)
+        public string Welcome(string name, int id = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {id}");
         }
     }
 }
